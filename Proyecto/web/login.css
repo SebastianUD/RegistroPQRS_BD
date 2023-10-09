@@ -1,0 +1,157 @@
+/* Importación de la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}/* Estilos generales para resetear márgenes y padding, y establecer la fuente 'Poppins' como predeterminada para todo el documento */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    /* Estilos para la sección principal de la página, centrándola vertical y horizontalmente y estableciendo una altura mínima del 100% del viewport y ancho completo */
+    
+    background: url('login_images/fondo.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}/* Estilos para la sección principal, incluyendo el fondo de la imagen especificada */
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 510px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 10px rgba(69, 243, 255, 0.5);
+}/* Estilos para el contenedor principal del formulario de inicio de sesión, incluyendo dimensiones, bordes, efecto de desenfoque, sombra y centrado de contenido */
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}/* Estilos para el encabezado h2 del formulario, incluyendo tamaño de fuente, color y alineación de texto */
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}/* Estilos para el contenedor de cada campo de entrada, incluyendo margen, ancho y borde inferior */
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}/* Estilos para las etiquetas (labels) de los campos de entrada, incluyendo posición, color, tamaño de fuente y animación de transición */
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}/* Estilos para el desplazamiento de las etiquetas cuando los campos de entrada están enfocados o tienen un valor válido */
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}/* Estilos para los campos de entrada, incluyendo tamaño, fondo, borde, contorno, tamaño de fuente, relleno y color de texto */
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}/* Estilos para los iconos utilizados en los campos de entrada, incluyendo posición, color y tamaño de fuente */
+
+.selector {
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}/* Estilos para el selector de opciones (radio buttons), incluyendo margen, tamaño de fuente, color y alineación de contenido */
+
+.selector label input {
+    margin-right: 3px;
+}/* Estilos para los radio buttons dentro del selector, incluyendo margen derecho */
+
+.selector label a {
+    color: #fff;
+    text-decoration: none;
+}/* Estilos para los enlaces dentro del selector, incluyendo color y decoración de texto */
+
+.selector label a:hover {
+    text-decoration: underline;
+}/* Estilos para los enlaces dentro del selector cuando se pasa el cursor sobre ellos, incluyendo subrayado */
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}/* Estilos para los botones, incluyendo dimensiones, bordes, fondo, cursor, tamaño de fuente y peso de fuente */
+
+.link_ud {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}/* Estilos para el enlace inferior, incluyendo tamaño de fuente, color y alineación de texto */
+
+.link_ud p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}/* Estilos para el enlace dentro del enlace inferior, incluyendo decoración de texto, color y peso de fuente */
+
+.link_ud p a:hover {
+    text-decoration: underline;
+}/* Estilos para el enlace dentro del enlace inferior cuando se pasa el cursor sobre él, incluyendo subrayado */
+
+.swal2-popup {
+  border-color: #329af0;
+  background-color: #329af0;
+}
+
+.swal2-title {
+  color: #329af0;
+}
+
+.swal2-icon {
+  color: #329af0;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #329af0;
+}
+

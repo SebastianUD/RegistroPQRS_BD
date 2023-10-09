@@ -1,0 +1,24 @@
+/* Estilos adicionales para la página de administradores */
+
+/* Clase que define un contenedor flexbox con elementos centrados y envuelto en varias líneas */
+.admin-options {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-bottom: 30px;
+}
+
+/* Estilos para los botones dentro de la sección de administradores */
+.admin-options .btn {
+margin: 10px;
+}
+
+/* Espaciado inferior para las secciones de administradores */
+.admin-section {
+margin-bottom: 30px;
+}
+
+/* Margen superior para el elemento con el id "record-result" */
+#record-result {
+margin-top: 20px;
+}
